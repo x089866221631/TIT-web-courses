@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人页面制作</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./icomoon/style.css">
+    <link rel="shortcut icon" href="./favicon/bitbug_favicon.ico" type="image/x-icon">
+    <script>
+        function clickTab(node) {
+            node.classList.add('active');
+            for (const tab of document.getElementsByClassName('tab')) {
+                if (tab.id !== node.id) {
+                    tab.classList.remove('active');
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SCHOOL</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONNECT</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <ul>
+            <input type="radio" id="control-1" name="control" checked="checked">
+            <input type="radio" id="control-2" name="control">
+            <input type="radio" id="control-3" name="control">
+            <input type="radio" id="control-4" name="control">
+
+
+            <li class="slide">
+                <div class="face"><img src="./img/阿船2.png" alt=""> </div>
+                <ol>
+                    <li>Email: <span>1725450045@qq.com</span></li>
+                    <li>twitter : <span>@ultimate_slow</span> </li>
+                    <li>bilibili: <span>@天空已落伍</span></li>
+                    <li>github : <span>@x089866221631</span></li>
+                </ol>
+            </li>
+            <li class="slide"><img src="./img/WJ]Q9QXWQ$(MRG(Z8YW8EF3.png" alt=""></li>
+            <li class="slide">
+                <div><img src="./img/QQ图片20221015230714.jpg" alt="">
+                </div>
+                我的名字叫吉良吉影，33岁。住在杜王町东北部的别墅区一带，未婚。我在龟友连锁店服务。每天都要加班到晚上8点才能回家。我不抽烟，酒仅止于浅尝。晚上11点睡，每天要睡足8个小时。睡前，我一定喝一杯温牛奶，然后做20分钟的柔软操，上了床，马上熟睡。一觉到天亮，决不把疲劳和压力，留到第二天。医生都说我很正常
+            </li>
+            <li class="slide">
+                <div class="face"><img src="./img/阿船2.png" alt=""> </div>
+                <ol>
+                    <li>Email: <span>1725450045@qq.com</span></li>
+                    <li>twitter : <span>@ultimate_slow</span> </li>
+                    <li>bilibili: <span>@天空已落伍</span></li>
+                    <li>github : <span>@x089866221631</span></li>
+                </ol>
+            </li>
+
+            <div class="control-visible">
+                <label for="control-1"></label>
+                <label for="control-2"></label>
+                <label for="control-3"></label>
+                <label for="control-4"></label>
+            </div>
+        </ul>
+    </div>
+</body>
+
+</html>
