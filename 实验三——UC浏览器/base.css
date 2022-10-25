@@ -307,6 +307,7 @@ li {
     color: #a2ad83;
     width: 138px;
     margin-bottom: 18px;
+    outline:none;
 }
 
 .container .right::before {
